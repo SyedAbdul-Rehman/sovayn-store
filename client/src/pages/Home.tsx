@@ -1,6 +1,7 @@
 import ProductHero from "@/components/product/ProductHero";
 import ProductFeatures from "@/components/product/ProductFeatures";
 import ProductGallery from "@/components/product/ProductGallery";
+import ProductGrid from "@/components/product/ProductGrid";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <div className="pt-16">
       <ProductHero />
-      
+
       <div className="container mx-auto px-4 py-16">
         <div className="flex items-center justify-center space-x-4 mb-16">
           <Badge variant="secondary" className="px-4 py-2">
@@ -24,6 +25,8 @@ export default function Home() {
         </div>
 
         <ProductFeatures />
+
+        <ProductGrid />
 
         <section className="py-16">
           <h2 className="text-3xl font-bold text-center mb-12">
